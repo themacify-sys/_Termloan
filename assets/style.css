@@ -1,0 +1,70 @@
+/* Master Custom Stylesheet - Term Loan */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap');
+
+:root {
+  --bg-black: #0B0C10;
+  --bg-navy: #1F2833;
+  --accent-teal: #45A29E;
+  --accent-cyan: #66FCF1;
+  --text-silver: #C5C6C7;
+  --text-white: #FFFFFF;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-black);
+  color: var(--text-silver);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Glassmorphism Effect */
+.glass-panel {
+  background: rgba(31, 40, 51, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(69, 162, 158, 0.2);
+}
+
+.glass-panel-hover:hover {
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 20px rgba(102, 252, 241, 0.15);
+  transform: translateY(-3px);
+  transition: all 0.3s ease;
+}
+
+/* Custom Neon Glow Text & Buttons */
+.text-cyan-glow {
+  color: var(--accent-cyan);
+  text-shadow: 0 0 10px rgba(102, 252, 241, 0.3);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #45A29E 0%, #66FCF1 100%);
+  color: #0B0C10;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 25px rgba(102, 252, 241, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-black);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bg-navy);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-teal);
+}
