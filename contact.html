@@ -1,77 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Term Loan</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/style.css">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Contact TERM LOAN | Financial Services</title>
+<meta name="description" content="Contact TERM LOAN for loan consultation, financial service assistance and documentation guidance.">
+<meta name="theme-color" content="#071426"><link rel="icon" href="data:,"><link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-[#0B0C10] text-[#C5C6C7]">
-    <nav class="glass-panel border-b border-gray-800 py-4 px-6 flex justify-between">
-        <a href="index.html" class="text-2xl font-bold text-white font-heading">Term <span class="text-[#66FCF1]">Loan</span></a>
-        <div class="space-x-6 text-sm">
-            <a href="index.html">Home</a>
-            <a href="contact.html" class="text-[#66FCF1]">Contact</a>
-        </div>
-    </nav>
+<body>
+<header class="site-header"><nav class="navbar container"><a class="brand" href="index.html"><span class="brand-mark">TL</span><span><strong>TERM LOAN</strong><small>FINANCIAL SERVICES</small></span></a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button><div class="nav-menu"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="plans.html">Plans</a><a href="claims.html">Support</a><a href="faq.html">FAQ</a><a class="active" href="contact.html">Contact</a><a class="nav-cta" href="contact.html">Get Consultation</a></div></nav></header>
 
-    <section class="py-16 max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12">
-        <div>
-            <h1 class="text-4xl font-bold text-white font-heading mb-6">Get In Touch</h1>
-            <p class="text-gray-400 mb-8">Reach out to our official enterprise office for advisory inquiries.</p>
+<main>
+<section class="page-hero"><div class="container reveal"><div class="eyebrow">GET IN TOUCH</div><h1>Let's discuss your <em>requirement.</em></h1><p>Send an enquiry and our team can contact you using your preferred method.</p></div></section>
 
-            <div class="space-y-6 text-sm mb-8">
-                <div class="flex items-start space-x-4">
-                    <i class="fas fa-map-marker-alt text-[#66FCF1] text-xl mt-1"></i>
-                    <div>
-                        <strong class="text-white block">Official Address:</strong>
-                        Building No. 20, Block B, New Rohtak Road, Karol Bagh, Ghaziabad, Uttar Pradesh - 110005
-                    </div>
-                </div>
-                <div class="flex items-center space-x-4">
-                    <i class="fas fa-phone text-[#66FCF1] text-xl"></i>
-                    <div><strong class="text-white block">Phone:</strong> +91 7669808439</div>
-                </div>
-                <div class="flex items-center space-x-4">
-                    <i class="fas fa-envelope text-[#66FCF1] text-xl"></i>
-                    <div><strong class="text-white block">Email:</strong> Wealthwizardsfinancial@gmail.com</div>
-                </div>
-            </div>
+<section class="section"><div class="container contact-grid">
+<div class="contact-details reveal">
+<div class="eyebrow">CONTACT DETAILS</div><h2>TERM LOAN</h2>
+<div class="contact-item"><span>PHONE</span><a href="tel:7669808439">7669808439</a></div>
+<div class="contact-item"><span>EMAIL</span><a href="mailto:Wealthwizardsfinancial0@gmail.com">Wealthwizardsfinancial0@gmail.com</a></div>
+<div class="contact-item"><span>ADDRESS</span><p>Building No. 20, TERM LOAN<br>New Rohtak Road<br>Karol Bagh<br>Uttar Pradesh - 110005</p></div>
+<div class="contact-item"><span>UDYAM REGISTRATION</span><strong>UDYAM-UP-29-0257019</strong></div>
+</div>
 
-            <!-- Google Map Embed -->
-            <div class="rounded-xl overflow-hidden h-64 border border-gray-700">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.528340158485!2d77.1900!3d28.6500!2m3!1f0!0f0!3f0!2m3!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjhCsDM5JzAwLjAiTiA3N8KwMTEnMzQuOCJF!5e0!3m2!1sen!2sin!4v1620000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
+<form class="contact-form reveal" id="enquiryForm" novalidate>
+<div class="form-row"><label>Full Name<input type="text" name="name" required autocomplete="name"></label><label>Mobile Number<input type="tel" name="mobile" required autocomplete="tel" pattern="[0-9+\-\s]{8,15}"></label></div>
+<div class="form-row"><label>Email<input type="email" name="email" required autocomplete="email"></label><label>Service Required<select name="service" required><option value="">Select service</option><option>Loan Consultation</option><option>Requirement Assessment</option><option>Documentation Guidance</option><option>Application Assistance</option><option>Business Funding Assistance</option><option>Other Enquiry</option></select></label></div>
+<label>Preferred Contact Method<select name="contactMethod" required><option value="">Select method</option><option>Phone</option><option>Email</option></select></label>
+<label>Message<textarea name="message" rows="6" required placeholder="Briefly describe your requirement"></textarea></label>
+<button class="btn btn-primary" type="submit">Submit Enquiry →</button>
+<p class="form-note">This is a front-end enquiry form. It does not transmit or email your information because no backend service is connected.</p>
+<div class="form-message" role="status"></div>
+</form>
+</div></section>
+</main>
 
-        <div class="glass-panel p-8 rounded-2xl">
-            <h3 class="text-xl font-bold text-white mb-6">Send Enterprise Inquiry</h3>
-            <form class="space-y-4">
-                <div>
-                    <label class="block text-xs mb-1">Full Name</label>
-                    <input type="text" placeholder="John Doe" class="w-full bg-[#1F2833] border border-gray-700 rounded p-3 text-white focus:outline-none">
-                </div>
-                <div>
-                    <label class="block text-xs mb-1">Mobile Number</label>
-                    <input type="tel" placeholder="+91 9876543210" class="w-full bg-[#1F2833] border border-gray-700 rounded p-3 text-white focus:outline-none">
-                </div>
-                <div>
-                    <label class="block text-xs mb-1">Inquiry Type</label>
-                    <select class="w-full bg-[#1F2833] border border-gray-700 rounded p-3 text-white focus:outline-none">
-                        <option>Financial Consultancy</option>
-                        <option>Specialized Design Service</option>
-                        <option>Udyam / MSME Verification</option>
-                    </select>
-                </div>
-                <div>
-                    <label class="block text-xs mb-1">Message</label>
-                    <textarea rows="4" placeholder="Your requirements..." class="w-full bg-[#1F2833] border border-gray-700 rounded p-3 text-white focus:outline-none"></textarea>
-                </div>
-                <button type="submit" class="btn-primary w-full py-3 rounded font-bold">Submit Request</button>
-            </form>
-        </div>
-    </section>
-</body>
-</html>
+<footer class="footer"><div class="container footer-grid"><div class="footer-brand"><a class="brand" href="index.html"><span class="brand-mark">TL</span><span><strong>TERM LOAN</strong><small>FINANCIAL SERVICES</small></span></a><p>Professional financial and loan assistance.</p><span class="udyam-badge">UDYAM-UP-29-0257019</span></div><div><h4>Quick Links</h4><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="plans.html">Plans</a><a href="claims.html">Support</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></div><div><h4>Services</h4><a href="services.html">Loan Consultation</a><a href="services.html">Documentation</a><a href="services.html">Application Assistance</a></div><div><h4>Contact</h4><a href="tel:7669808439">7669808439</a><a href="mailto:Wealthwizardsfinancial0@gmail.com">Wealthwizardsfinancial0@gmail.com</a><p>Building No. 20, Term Loan<br>New Rohtak Road, Karol Bagh<br>Uttar Pradesh, PIN 110005</p></div></div><div class="footer-bottom container"><span>© <span class="year"></span> TERM LOAN.</span><span><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></span></div></footer>
+<button class="back-top" aria-label="Back to top">↑</button><script src="script.js"></script>
+</body></html>
